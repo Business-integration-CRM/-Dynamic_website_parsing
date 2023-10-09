@@ -44,7 +44,7 @@ for g in range(0,9):
     driver.execute_script("document.body.style.zoom='50%'")
 
     # Загрузка cookie из файла
-    with open('cookies.pkl', 'rb') as file:
+    with open('cookies.pkl', 'rb') as file: # Укажите путь до ваших файлов cookies
         cookies = pickle.load(file)
 
     # Добавление cookie в браузер
